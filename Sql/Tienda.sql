@@ -34,7 +34,7 @@ CREATE TABLE Pedido(
 	id_persona int,
 	total_pagar int,
 
-	primary key(id_pedido)
+	primary key(id_pedido),
 
 	constraint fk_pedido_persona foreign key(id_persona) references Persona(id_persona)
 
@@ -54,8 +54,8 @@ CREATE TABLE Pedido_producto(
 
 	primary key(codigo_producto,codigo_pedido),
 
-	constraint fk_pedido_producto_producto foreign key(codigo_producto) references Producto(id_producto)
-	constraint fk_pedido_producto_pedido foreign key(codigo_pedido) references Pedido(id_pedido),
+	constraint fk_pedido_producto_producto foreign key(codigo_producto) references Producto(id_producto),
+	constraint fk_pedido_producto_pedido foreign key(codigo_pedido) references Pedido(id_pedido)
 
 );
 
@@ -85,8 +85,8 @@ CREATE TABLE Receta_ingrediente(
 
 	primary key(codigo_receta,codigo_ingrediente),
 
-	constraint fk_receta_ingrediente_receta foreign key(codigo_receta) references Receta(id_receta)
-	constraint fk_receta_ingrediente_ingrediente foreign key(codigo_ingrediente) references Ingrediente(id_ingrediente),
+	constraint fk_receta_ingrediente_receta foreign key(codigo_receta) references Receta(id_receta),
+	constraint fk_receta_ingrediente_ingrediente foreign key(codigo_ingrediente) references Ingrediente(id_ingrediente)
 
 
 );

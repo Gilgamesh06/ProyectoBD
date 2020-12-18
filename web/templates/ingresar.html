@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+
+<div class="row">
+    <div class="col-md-5">
+        <div class="card card-body">
+            <form action="">
+                <div class="form-group">
+                    <input type="text" name="Usuario" placeholder="Usuario" class="form-control">    
+                </div>
+                <div class="form-group">
+                    <input type="text" name="Contraseña" placeholder="Contraseña" class="form-control">    
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-secondary btn-block" class="form-control">
+                        Enviar
+                    </button>
+                </div>
+                <div class="form-group">
+                    <a href="/Registrar" class="btn btn-secondary btn-block" class="form-control">
+                        Registrarse
+                    </a>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

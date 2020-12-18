@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="row">
+    <div class="card card-body">
+        <form action="">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" name="Nombres" placeholder="Nombres" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" name="Apellidos" placeholder="Apellidos" class="form-control" >    
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" name="Departamento" placeholder="Departamento" class="form-control">    
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" name="Ciudad" placeholder="Ciudad" class="form-control">    
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" name="Direccion" placeholder="Direccion" class="form-control">    
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" name="Telefono" placeholder="Telefono" class="form-control">    
+                </div>
+            </div>
+                <div class="form-group">
+                    <input type="text" name="Correo" placeholder="Correo" class="form-control">    
+                </div>
+                <div class="form-group">
+                    <input type="text" name="Usuario" placeholder="Usuario" class="form-control">     
+                </div>
+                <div class="form-group">
+                    <input type="text" name="Contraseña" placeholder="Contraseña" class="form-control">    
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-secondary btn-block" class="form-control">
+                        Enviar
+                    </button>
+                </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
