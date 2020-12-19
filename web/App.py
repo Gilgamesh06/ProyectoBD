@@ -22,5 +22,18 @@ def Registrar():
 def Ingresar():
     return render_template('ingresar.html')
 
+@app.route('/Productos')
+def Productos():
+    return render_template('productos.html')
+
+@app.route('/Pedidos')
+def Pedidos():
+    return render_template('pedidos.html')
+
+
+@app.route('/Contactenos')
+def Contactenos():
+    return render_template('contactenos.html')
+
 if __name__ == '__main__':
     app.run(port = 3000, debug = True)

@@ -20,3 +20,12 @@
 
 ---
 
+# Instalacion Dependecias
+
+```
+$ sudo pip3 install flask flask-mysqldb
+
+```
+
+---
+
