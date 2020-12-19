@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pasteleria Garcia</title>
+    <title>Pan pan Trigo trigo</title>
     <link rel="stylesheet" href=https://bootswatch.com/4/minty/bootstrap.min.css>
 </head>
 <body>
@@ -11,7 +11,10 @@
     <img src="https://github.com/Gilgamesh06/ProyectoBD/blob/main/Images/icono.png?raw=true" class="img-fluid" alt="Responsive image">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-        <a class="navbar-brand" href="/">Pasteleria Garcia</a>
+        <a class="navbar-brand" href="#">
+          <img src="" width="30" height="30" alt="">
+        </a>
+        <a class="navbar-brand" href="/"><h4><pre>Pan <br> Pan Trigo <br>        Trigo</pre></h4></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,23 +28,54 @@
         </div>
   </nav>
 
+<div class="container-fluid pt-3">
+        <div class="modal-body row">
+          <div class="col-md-8">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="https://github.com/Gilgamesh06/Docfiles/blob/master/Images/lain_wal.png?raw=true" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="https://github.com/Gilgamesh06/Docfiles/blob/master/Images/lain_wal.png?raw=true" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="https://github.com/Gilgamesh06/Docfiles/blob/master/Images/lain_wal.png?raw=true" alt="Third slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <br>
 
-  <div class="container pt-3">
-        {% block body %}
-        {% endblock %}
-  </div>
+            </br>
 
-  <div class="container pt-3">
-    <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </p>
-    </div>
-    </div>
+            {% block body %}
+            {% endblock %}
+
+          </div>
+          <div class="col-md-4">
+
+            {% block content %}
+            {% endblock %}
+            <div class="card" style="width: 18rem;">
+              <img src="https://github.com/Gilgamesh06/Docfiles/blob/master/Images/lain_wal.png?raw=true" class="card-img-top" alt="github">
+              <div class="card-body">
+                <h5 class="card-title">Start</h5>
+                <p class="card-text">Si te sirvio dame una estrella xD</p>
+                <a href="https://github.com/Gilgamesh06/ProyectoBD" class="btn btn-secondary">Vamos xD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+</div>
 
   <div class="position-bottom">
     <footer class="bg-light text-center text-lg-start" class="navbar navbar-fixed-bottom">
